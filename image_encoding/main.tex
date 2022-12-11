@@ -1,0 +1,34 @@
+% \documentclass[pdfCover]{myreport} % 需要pdf封面
+\documentclass{myreport}
+\title{数字图像编码实验}
+\author{陈伯硕}
+\date{\today}
+
+\def\MyProject{数字图像处理}
+
+\fancyhead{} % Clear the headers
+\renewcommand{\headrulewidth}{1pt} % Width of line at top of page
+\fancyhead[L]{\MyProject}
+\fancyhead[R]{\MyTitle} % Mark right [R] of page with Chapter name [\leftmark]
+
+
+\usepackage{subfiles}
+\begin{document}
+
+\maketitle
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width = 0.6\textwidth]{raw}
+  \caption{图片来自 Bing 2022-12-8 封面图}
+  \label{fig:fish}
+\end{figure}
+
+\section{无损编码/压缩算法实验}
+
+\begin{appendices} % 附录
+  \includepdf[pages={1},pagecommand=\section*{源代码}]{attachment/build/image_processing.pdf}
+  \includepdf[pages={2-},pagecommand=\section*{\quad}]{attachment/build/image_processing.pdf}
+
+\end{appendices}
+\end{document}

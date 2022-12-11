@@ -1,0 +1,8 @@
+imports:
+  my_report: [image_of_the_spatial_domain]
+
+
+git module my_report:
+  url: git@github.com:chenboshuo/myreport_template.git
+  pick: [makefile, myreport.cls]
+

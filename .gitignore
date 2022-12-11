@@ -1,0 +1,25 @@
+# peru
+**/.peru
+
+# build
+**/build
+
+# peru files
+image_of_the_spatial_domain/myslide.cls
+image_of_the_spatial_domain/makefile
+
+
+# python
+**/.virtual_documents
+**/.ipynb_checkpoints
+**/__pycache__
+**/.pytest_cache
+
+# temp_try
+**/temp_*
+
+# generated files
+**/figures
+
+# log files
+*.log
